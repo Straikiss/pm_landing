@@ -38,9 +38,69 @@
     <link rel="stylesheet" href="https://postmarket.pro/Content/Public/css/jquery.fancybox.css">
     <link rel="stylesheet" href="https://postmarket.pro/Content/Public/css/animate.css">
     <link rel="stylesheet" href="https://postmarket.pro/Content/Public/css/style.css">
-    
+    <link rel="stylesheet" href="chiefslider.css">
 </head>
 <body class="is-join is-program is-examples">
+    <style>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol';
+        }
+
+        .container {
+          max-width: 1100px;
+          margin: 0 auto;
+        }
+
+        .slider__container {
+          margin-top: 60px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .slider__item {
+          flex: 0 0 25%;
+          max-width: 25%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .slider__wrapper {
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+
+        .slider__item-container {
+          color: #fff;
+          font-size: 14px;
+
+        }
+
+        .slider__item .slider__item-content {
+          background: #1A1038;
+          height: 80px;
+          color: #fff;
+          padding: 12px;
+          border-radius: 6px;
+        }
+
+       
+        .fast-img {
+            margin-right: 16px;
+            border-radius: 50%;
+            max-width: 58px;
+            width: 100%;
+            float: left;
+        }
+    </style>
         <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ68JQ8"
@@ -138,18 +198,104 @@
                 <div class="header__content">
                     <h1>Кейсы</h1>
                 </div>
-                <!-- content -->
             </div>
-            <ul class="examples">
-                <li>
-                    <a style="background: #1A1038; color: #fff; border-radius: 6px;" href="tamarisru.html" class="tab-heading" data-tab="11">
-                        <img src="img/tamarisru.png" alt="">
-                        <div>
-                            <span class="title">Tamaris</span>
-                            <span>(интернет-магазин обуви Tamaris)</span>
-                        </div>
-                    </a>
-                </li>
+        </div>
+    </div>            <!-- content -->
+        <div class="container">
+                    <div class="slider" data-slider="chiefslider">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+                <a href="tamarisru.html">
+                  <div class="slider__item-container">
+                    <div class="slider__item-content">
+                        <img class="fast-img" src="img/tamarisru.png" alt="">
+                        <div class="title">Tamaris</div>
+                        <div>(интернет-магазин обуви Tamaris)</div>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="slider__item">
+                <a href="sbermarketru.html">
+                  <div class="slider__item-container">
+                    <div class="slider__item-content">
+                        <img class="fast-img" src="img/pravkaru.png" alt="">
+                        <span class="title">Правка</span>
+                        <span>(Медицинский центр “Правка”)</span> 
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">3</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">4</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">5</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">6</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">7</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">8</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">9</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">10</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">11</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">12</div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">13</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="slider__control" data-slide="prev"></a>
+      <a href="#" class="slider__control" data-slide="next"></a>
+    </div>
+
+        </div>
+
+
+
+                <!-- <li>
+                    <
                 <li>
                     <a href="pravkaru.html" class="tab-heading" data-tab="12">
                         <img src="img/pravkaru.png" alt="">
@@ -168,6 +314,10 @@
                         </div>
                     </a>
                 </li>
+
+
+
+
                 <li>
                     <a href="kodium.html" class="tab-heading" data-tab="1">
                         <img src="https://postmarket.pro/Content/Public/img/examples/1.png" alt="">
@@ -176,10 +326,10 @@
                             <span>(школа программирования)</span>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <!-- item -->
 
-                <li>
+                <!-- <li>
                     <a href="mangotechsurance.html" class="tab-heading" data-tab="2">
                         <img src="https://postmarket.pro/Content/Public/img/examples/2.png" alt="">
                         <div>
@@ -188,7 +338,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="youitsme.html" class="tab-heading" data-tab="3">
@@ -199,7 +348,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="scanandtranslate.html" class="tab-heading" data-tab="4">
@@ -210,7 +358,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="homemrkt.html" class="tab-heading" data-tab="5">
@@ -221,7 +368,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="dufa_russia.html" class="tab-heading" data-tab="6">
@@ -232,7 +378,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="yammydating.html" class="tab-heading" data-tab="7">
@@ -243,7 +388,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="v_podarok_drugu.html" class="tab-heading" data-tab="8">
@@ -254,7 +398,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="coral_travel_26.html" class="tab-heading" data-tab="9">
@@ -265,7 +408,6 @@
                         </div>
                     </a>
                 </li>
-                <!-- item -->
 
                 <li>
                     <a href="albina_cosmetolog.html" class="tab-heading" data-tab="10">
@@ -275,8 +417,7 @@
                             <span>(студия красоты)</span>
                         </div>
                     </a>
-                </li> 
-            </ul>
+                </li>  -->
         </div>
     </div>
 
@@ -360,6 +501,16 @@
             <a onmouseover="this.style.backgroundColor='#1A1038';" onmouseout="this.style.backgroundColor='#0F18DF';" href="https://postmarket.pro/SignIn?ReturnUrl=%2Fpromoter" style="background: #0F18DF; width: 303px; line-height: 60px; border-radius: 6px; display: inline-block; color: #fff;">Перейти в личный кабинет</a>
         </div>
     </div>
-</section>        
+</section> 
+<script src="chiefslider.js"></script>
+
+  <script>
+    const $slider = document.querySelector('[data-slider="chiefslider"]');
+    const slider = new ChiefSlider($slider, {
+      loop: false,
+      autoplay: false,
+      interval: 5000,
+    });
+  </script>       
 </body>
 </html>
